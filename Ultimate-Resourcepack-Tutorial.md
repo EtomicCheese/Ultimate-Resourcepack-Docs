@@ -154,6 +154,14 @@ Now that we can see the file name extensions, we know which one of the files is 
 
 The next step is to extract the jar file as if we were extracting any other compressed archive. The software that I typically use for this kind of thing is [7-Zip](https://www.7-zip.org/download.html), which I prefer over other softwares like WinZip. Simply go to the download page of 7-Zip and [install it](https://www.7-zip.org/download.html).
 
+Once you have 7-Zip, you can go to the `.jar`, right click, go to the 7-Zip section, then press `extract files`.
+
+![4](content/gifs/4.gif)
+
+Now that we have the `.jar` file extracted, we can open it up and go to the `assets` folder.
+
+Inside that folder is `.minecraft`, and now you can see all of the folders that contain the original assets used within the game. This will be useful when we need to reference what file goes where or if we need to copy a file over and modify it in our own resourcepack.
+
 ## Json in Minecraft
 
 `Json` is an acronym for "**J**ava**S**cript **O**bject **N**otation". It is often used for storing and transporting information and data from the programming language `JavaScript`. `Json` in itself is primarily used for websites, as `JavaScript` is usually paired with `HTML` and `CSS`.
