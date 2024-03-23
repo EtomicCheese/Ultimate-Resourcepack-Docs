@@ -48,29 +48,41 @@ Whatever we call the folder or zip file will translate to the name of the resour
 Currently I have called the resourcepack folder to just be `"Cheese"`. As such the folder is displayed as `"Cheese"`
 
 **Windows:**
+
 ![Cheese in Windows](content/images/1.png)
+
 **Minecraft:**
+
 ![Cheese in Minecraft](content/images/2.png)
 
 Including the `§` in the folder name, you can define what colours and styles the title of the resourcepack has.
 
 **Windows:**
+
 ![§3Cheese in Windows](content/images/3.png)
+
 **Minecraft:**
+
 ![§3Cheese in Minecraft](content/images/4.png)
 
 Alternatively you can add multiple `§`. You can even combine them:
 
 **Windows:**
+
 ![\u00a73Cheese in Windows](content/images/5.png)
+
 **Minecraft:**
+
 ![\u00a73Cheese in Minecraft](content/images/6.png)
 
 The `§r` allows you to completely reset the colours and styles that come after it's declaration, which allows you to redefine what you want without inheriting the styles previously used for what you don't want.
 
 **Windows:**
+
 ![\u00a73Cheese in Windows](content/images/7.png)
+
 **Minecraft:**
+
 ![\u00a73Cheese in Minecraft](content/images/8.png)
 
 You can see that the last to characters in "Cheese", "`se`" has been reset to the default values. Though you can see that the foldername in windows has become unreadable, but it looks good in minecraft.
@@ -288,6 +300,7 @@ All of the examples above are written in a way that is readable. `Json` doesn't 
 ```json
 {"Cheese":{"Is Tasty?":true,"Is Healthy?":false},"Mozzarella Notes": ["Even though Mozzarella is good","I still prefer cheddar"]}
 ```
+
 Of course this doesn't look as clean as having everything open, but in many cases this can work because `Json` allows you to type in both styles in the same document without hindering anything.
 
 ```json
@@ -350,11 +363,13 @@ A `pack.mcmeta` file inside the `Cheese` folder is what allows minecraft to reco
 This is how the game functions with a pre-configured `pack.mcmeta` file inside the folder:
 
 ![vscode with pack.mcmeta](content/images/9.png)
+
 ![minecraft with pack.mcmeta](content/images/10.png)
 
 And this is the resourcepack folder without a valid `pack.mcmeta` file:
 
 ![vscode without pack.mcmeta](content/images/11.png)
+
 ![minecraft without pack.mcmeta](content/images/12.png)
 
 Note that the `Resourcepacks` folder displayed in the smaller images isn't the resourcepack, it's simply the folder that you put your resourcepacks inside from the `.minecraft` directory.
@@ -397,10 +412,15 @@ By the very least, you need a `pack_format` `object` with a number and a `descri
 If your on the correct version, minecraft won't display any errors, but if the resourcepack's version is incorrect, then Minecraft will say `Made for an older version of Minecraft`, or `Made for a newer version of Minecraft`.
 
 **Correct**
+
 ![Correct version](content/images/16.png)
+
 **Too Old**
+
 ![too old](content/images/15.png)
+
 **Too new**
+
 ![too new](content/images/14.png)
 
 
@@ -446,6 +466,7 @@ There are three ways you can use to create a description. The first way is to si
     }
 }
 ```
+
 ![17](content/images/17.png)
 
 The resourcepack selection menu allows each resourcepack description to have 2 lines, not just a single line. To write on the second line of the description, you can simple add `\n` in the text.
@@ -457,6 +478,7 @@ The resourcepack selection menu allows each resourcepack description to have 2 l
     }
 }
 ```
+
 ![18](content/images/18.png)
 
 Above you can see `\n` is inserted in-between `"Hello,"` and `"World!"`. This will cause `"Hello,"` to be on the first line, and `"World!"` to be on the second.
@@ -538,6 +560,7 @@ As complicated as it may look, it's simply a longer version of a `§`. Previousl
     }
 }
 ```
+
 ![20](content/images/20.png)
 
 I'm not too sure why any sane person will do this but if you really really **REALLY** want to, you can.
@@ -629,6 +652,7 @@ In more recent versions of Minecraft, you are no longer restricted to using the 
     }
 }
 ```
+
 ![24](content/images/24.png)
 
 In this case, I put in the hex code `#ff0000`, which is just really really red.
