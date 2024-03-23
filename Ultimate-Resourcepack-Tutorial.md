@@ -16,15 +16,15 @@
 
 ## Resources
 
-[Resource pack | Minecraft.wiki](https://minecraft.wiki/w/Resource_pack)
+[Resource pack, Minecraft.wiki](https://minecraft.wiki/w/Resource_pack)
 
-[Pack Format | Minecraft.wiki](https://minecraft.wiki/w/Pack_format)
+[Pack Format, Minecraft.wiki](https://minecraft.wiki/w/Pack_format)
 
-[Raw JSON text format | Minecraft.wiki](https://minecraft.wiki/w/Raw_JSON_text_format)
+[Raw JSON text format, Minecraft.wiki](https://minecraft.wiki/w/Raw_JSON_text_format)
 
-[Formatting Codes | Minecraft.wiki](https://minecraft.wiki/w/Formatting_codes)
+[Formatting Codes, Minecraft.wiki](https://minecraft.wiki/w/Formatting_codes)
 
-[List of Unicode Characters | Wikipedia.org](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
+[List of Unicode Characters, Wikipedia.org](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
 
 [7-Zip Website](https://www.7-zip.org/download.html)
 
@@ -148,7 +148,7 @@ Inside you should see two files. `1.20.4.jar` and `1.20.4.json`. Our attention i
 
 If you are unable to see the file extensions on Windows, simply click the drop down button in your Windows Explorer, go to `View`, press `Options`, go to `View`, then scroll down and disable `Hide extensions for known file types`, then click apply.
 
-![3](content/gifs/3.gif)
+![3](content/gifs/3.gif) {#unhiding-file-name-extentions}
 
 Now that we can see the file name extensions, we know which one of the files is the .jar. Of course if you have Java installed you would see the file type through the icon in my case, but you can never be too sure.
 
@@ -170,9 +170,9 @@ Minecraft uses `Json` to store information about object and entity models and an
 
 ## Json in Minecraft Syntax
 
-As resourcepacks are indeed an artistic venture, you are often presented with programming in `Json` depending on what you are doing. In order to make sure that you don't have to run around the internet searching for tutorials, I will display how to write in `Json` specifically for Minecraft right here.
+As resourcepacks are indeed an artistic venture, you are often presented with programming in `Json` depending on your situation. In order to make sure that you don't have to run around the internet searching for tutorials, I will display how to write in `Json` specifically for Minecraft right here.
 
-All data and information stored in `Json` resides in `objects`. Some `objects` has a defined name. First we create the `main object`. The `main object` does not need to have a defined name.
+All data and information stored in `Json` resides in `objects {}`. Some `objects {}` has a defined name. First we create the `main object {}`, which is simply an empty set of curly brackets.
 
 ```json
 {
@@ -180,7 +180,7 @@ All data and information stored in `Json` resides in `objects`. Some `objects` h
 }
 ```
 
-Objects are defined by curly brackets `{}`, and any information inside `{}` is stored in the `object` that the `{}` belong to. Currently this `object` does not contain any information. So let's fill it with more objects, but this time we are required to define objects by their names.
+`Objects {}` contain information called `"keys":`. A `"key":` is a `"string"` that contains a value. In this case, the `"key":` `"Cheese"` contains number `5`.
 
 ```json
 {
@@ -188,9 +188,9 @@ Objects are defined by curly brackets `{}`, and any information inside `{}` is s
 }
 ```
 
-We define `object` names by putting them in quotations `""`, and then a colon `:` to define what the object contains.
+We define `"keys":` names by putting them in quotations `""`, and then a colon `:` to define what the `"key":` contains.
 
-In some cases, objects can contain other objects.
+In some cases, `"keys":` can contain `objects {}` that contain more `"keys"`.
 
 ```json
 {
@@ -200,9 +200,9 @@ In some cases, objects can contain other objects.
 }
 ```
 
-Here `Cheese` opens up to another set of curly brackets `{}`, and in there the `Cheese` `object` is now able to contain other `objects`.
+Here `Cheese` opens up to another `object {}` and in there the `Cheese` `"key":` is now able to contain other `"keys":`.
 
-To have an `object` contain multiple `objects`, you must put a comma `,` at the end of every defined `object`.
+To have a `key` contain multiple `keys`, you must put a comma `,` at the end of every defined `key` after the value.
 
 **Example 1**
 
@@ -214,6 +214,8 @@ To have an `object` contain multiple `objects`, you must put a comma `,` at the 
     "Cheese4": 4
 }
 ```
+
+You can see that the last defined `"key":` does not have a comma `,`, simply because it is the last `"key":` in the set, and therefore we tell `Json` that there isn't anything coming after the `Cheese4` `"key":`.
 
 **Example 2**
 
@@ -229,7 +231,7 @@ To have an `object` contain multiple `objects`, you must put a comma `,` at the 
 }
 ```
 
-Realistically you can mix them all together and have as many nested `objects` as you want.
+Realistically you can mix all the examples together and have as many nested `"keys":` as you want.
 
 ```json
 {
@@ -255,9 +257,9 @@ Realistically you can mix them all together and have as many nested `objects` as
 }
 ```
 
-it starts to look complicated when you have multiple nested `objects` put together.
+It starts to look complicated when you have multiple nested `"keys":` put together.
 
-Another kind of value you can assign `objects` is strings. A `string` is just a fancy word for saying `text`. How `Json` knows what is an `object` and what is a `string` is defined by whether it has a colon `:` that assigns values to the `object`.
+Another kind of value you can assign `"keys":` is `"strings"` since `"keys":` are already technically `"strings"`. A `"string"` in programming is simply an `array []` of characters, a `"string"` of characters is just a word or a whole sentance.
 
 ```json
 {
@@ -266,7 +268,7 @@ Another kind of value you can assign `objects` is strings. A `string` is just a 
 }
 ```
 
-You can also assign an array of values to an `object`, meaning that a single `object` can hold multiple values instead of just one.
+You can also assign an array of values to a `"key":`, meaning that a single `"key":` can hold multiple values instead of just one.
 
 ```json
 {
@@ -277,7 +279,7 @@ You can also assign an array of values to an `object`, meaning that a single `ob
 }
 ```
 
-Arrays also allow you to have multiple curly brackets `{}` that contains multiple `object` values into a single `object`.
+`Arrays []` allow a `"key":` to contain multiple `objects {}`
 
 ```json
 {
@@ -295,9 +297,9 @@ Arrays also allow you to have multiple curly brackets `{}` that contains multipl
 }
 ```
 
-Just like how you need a comma `,` to tell `Json` that there is another value on the way, you also do it to the curly brackets `{}` to tell `Json` that there is another pair coming along.
+Just like how you need a comma `,` to tell `Json` that there is another value in line, you also do it to the curly brackets `{}` to tell `Json` that there is another pair coming along.
 
-The last piece of information that is needed is `true` and `false` statements. They are simply the word `true` and `false` without quotations.
+The last piece of information that is needed is `true` and `false` statements, or what we call a `Boolean`. They are simply the word `true` and `false` without quotations.
 
 ```json
 {
@@ -308,7 +310,7 @@ The last piece of information that is needed is `true` and `false` statements. T
 }
 ```
 
-All of the examples above are written in a way that is readable. `Json` doesn't need to look like this, as every `object` can also be in a single line.
+All of the examples above are written in a way that is readable. `Json` doesn't need to look like this, as everything can be written onto a single line.
 
 ```json
 {"Cheese":{"Is Tasty?":true,"Is Healthy?":false},"Mozzarella Notes": ["Even though Mozzarella is good","I still prefer cheddar"]}
@@ -387,9 +389,11 @@ And this is the resourcepack folder without a valid `pack.mcmeta` file:
 
 Note that the `Resourcepacks` folder displayed in the smaller images isn't the resourcepack, it's simply the folder that you put your resourcepacks inside from the `.minecraft` directory.
 
-As you can see, the game doesn't even display a resourcepack if the `pack.mcmeta` file isn't there or the code inside the file isn't valid. The `pack.mcmeta` file requires at least the `pack_format` `object` and the `description` `object` for minecraft to recognize the resourcepack. This will be shown soon.
+As you can see, the game doesn't even display a resourcepack if the `pack.mcmeta` file isn't there or the code inside the file isn't valid. The `pack.mcmeta` file requires at least the `pack_format` `"key":` and the `"description":` and `"object":` `"keys":` for minecraft to recognize the resourcepack.
 
 Now that you understand that the game can't function without the file, create a new file and call it `pack.mcmeta`. The `.mcmeta` is the file extension minecraft uses to give the game's assets extra information for not only the metadata of the resourcepack but also metadata for textures so that we can specify whether or not the textures can animate.
+
+If you are unable to see the file name extentions, refer to [here](#unhiding-file-name-extentions)
 
 Once the file is created, edit it with your text editor of choice.
 
