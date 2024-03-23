@@ -17,10 +17,15 @@
 ## Resources
 
 [Resource pack | Minecraft.wiki](https://minecraft.wiki/w/Resource_pack)
+
 [Pack Format | Minecraft.wiki](https://minecraft.wiki/w/Pack_format)
+
 [Raw JSON text format | Minecraft.wiki](https://minecraft.wiki/w/Raw_JSON_text_format)
+
 [Formatting Codes | Minecraft.wiki](https://minecraft.wiki/w/Formatting_codes)
+
 [List of Unicode Characters | Wikipedia.org](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
+
 [7-Zip Website](https://www.7-zip.org/download.html)
 
 ## Welcome
@@ -45,7 +50,7 @@ Now create a folder and name it whatever you want.
 
 Whatever we call the folder or zip file will translate to the name of the resourcepack in the game itself within the resourcepack selection menu. The name of the resourcepack folder can also contain unicode unicode escape characters or the `§` character that I can't pronounce.
 
-Currently I have called the resourcepack folder to just be `"Cheese"`. As such the folder is displayed as `"Cheese"`
+Currently I have called the resourcepack folder to just be `"Cheese"`. As such the folder is displayed as `"Cheese"`.
 
 **Windows:**
 
@@ -147,7 +152,7 @@ If you are unable to see the file extensions on Windows, simply click the drop d
 
 Now that we can see the file name extensions, we know which one of the files is the .jar. Of course if you have Java installed you would see the file type through the icon in my case, but you can never be too sure.
 
-The next step is to extract the jar file as if we were extracting any other compressed archive. The software that I typically use for this kind of thing is [7-Zip](https://www.7-zip.org/download.html), which I prefer over other softwares like WinZip. Simply go to the download page of 7-Zip and [install it].
+The next step is to extract the jar file as if we were extracting any other compressed archive. The software that I typically use for this kind of thing is [7-Zip](https://www.7-zip.org/download.html), which I prefer over other softwares like WinZip. Simply go to the download page of 7-Zip and [install it](https://www.7-zip.org/download.html).
 
 ## Json in Minecraft
 
