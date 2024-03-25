@@ -1,9 +1,12 @@
-# Index
+# Creating a Resourcepack
 
-- [Index](#index)
+## Index
+
+- [Creating a Resourcepack](#creating-a-resourcepack)
+  - [Index](#index)
   - [Resources](#resources)
   - [Welcome](#welcome)
-- [Creating the Resourcepack](#creating-the-resourcepack)
+  - [Resourcepack](#resourcepack)
   - [Minecraft Resources](#minecraft-resources)
   - [Json in Minecraft](#json-in-minecraft)
   - [Json in Minecraft Syntax](#json-in-minecraft-syntax)
@@ -40,7 +43,7 @@ If you would like to the sources of the information that I present, you can go t
 
 With that being said, let's begin.
 
-# Creating the Resourcepack
+## Resourcepack
 
 A resourcepack can either be contained withing a .zip file or a standard folder. As a resourcepack is being created, it can simply be a folder in the `resourcepacks` folder under `.minecraft`. You can also have access this folder by simply pressing `Open Pack Folder` in minecraft from the resourcepack selection screen:
 
