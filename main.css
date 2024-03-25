@@ -8,15 +8,14 @@ body, .markdown-body table{
 }
 
 .markdown-body table td {
-    background-color: rgb(80, 80, 80);
-    color: rgb(220, 220, 220);
-}
-
-.markdown-body table tr {
     background-color: rgb(20, 20, 20);
     color: rgb(220, 220, 220);
 }
 
 .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
     border-bottom: 0px solid #000;
+}
+
+a {
+    color: #3b80ff
 }
