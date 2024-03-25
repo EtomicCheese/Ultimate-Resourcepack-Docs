@@ -27,3 +27,15 @@ a {
 .markdown-body code, .markdown-body .highlight, .markdown-body pre, .markdown-body .highlight pre {
     background-color: rgb(30, 30, 30);
 }
+
+.highlight .nl {
+    color: rgb(156, 220, 254);
+}
+
+.highlight .s2 {
+    color: rgb(206, 145, 120);
+}
+
+.highlight .mi {
+    color: rgb(181, 206, 168);
+}
