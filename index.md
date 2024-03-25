@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="main.css">
+
 # Welcome to the Ultimate Resourcepack Documentation
 
 On this page you will be able to navigate through the index of the entire page.

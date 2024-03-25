@@ -1,8 +1,8 @@
+<link rel="stylesheet" href="main.css">
+
 # Creating a Resourcepack
 
 ## Index
-
-<link rel="stylesheet" href="main.css">
 
 - [Creating a Resourcepack](#creating-a-resourcepack)
   - [Index](#index)
