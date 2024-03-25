@@ -10,6 +10,15 @@
   - [Minecraft Resources](#minecraft-resources)
   - [Json in Minecraft](#json-in-minecraft)
   - [Json in Minecraft Syntax](#json-in-minecraft-syntax)
+    - [Objects in Json](#objects-in-json)
+    - [Keys in Json](#keys-in-json)
+    - [Nested Keys](#nested-keys)
+    - [Sequential Keys and Objects](#sequential-keys-and-objects)
+    - [Sequential Mania](#sequential-mania)
+    - [Strings in Json](#strings-in-json)
+    - [Arrays in Json](#arrays-in-json)
+    - [Booleans in Json](#booleans-in-json)
+    - [Json Formatting](#json-formatting)
     - [Escape Characters](#escape-characters)
   - [Pack.mcmeta](#packmcmeta)
     - [`pack_format`](#pack_format)
@@ -175,6 +184,8 @@ Minecraft uses `Json` to store information about object and entity models and an
 
 As resourcepacks are indeed an artistic venture, you are often presented with programming in `Json` depending on your situation. In order to make sure that you don't have to run around the internet searching for tutorials, I will display how to write in `Json` specifically for Minecraft right here.
 
+### Objects in Json
+
 All data and information stored in `Json` resides in `objects {}`. Some `objects {}` has a defined name. First we create the `main object {}`, which is simply an empty set of curly brackets.
 
 ```json
@@ -182,6 +193,8 @@ All data and information stored in `Json` resides in `objects {}`. Some `objects
 
 }
 ```
+
+### Keys in Json
 
 `Objects {}` contain information called `"keys":`. A `"key":` is a `"string"` that contains a value. In this case, the `"key":` `"Cheese"` contains number `5`.
 
@@ -192,6 +205,8 @@ All data and information stored in `Json` resides in `objects {}`. Some `objects
 ```
 
 We define `"keys":` names by putting them in quotations `""`, and then a colon `:` to define what the `"key":` contains.
+
+### Nested Keys
 
 In some cases, `"keys":` can contain `objects {}` that contain more `"keys"`.
 
@@ -205,9 +220,9 @@ In some cases, `"keys":` can contain `objects {}` that contain more `"keys"`.
 
 Here `Cheese` opens up to another `object {}` and in there the `Cheese` `"key":` is now able to contain other `"keys":`.
 
-To have a `key` contain multiple `keys`, you must put a comma `,` at the end of every defined `key` after the value.
+### Sequential Keys and Objects
 
-**Example 1**
+To have a `key` contain multiple `keys`, you must put a comma `,` at the end of every defined `key` after the value.
 
 ```json
 {
@@ -220,8 +235,6 @@ To have a `key` contain multiple `keys`, you must put a comma `,` at the end of 
 
 You can see that the last defined `"key":` does not have a comma `,`, simply because it is the last `"key":` in the set, and therefore we tell `Json` that there isn't anything coming after the `Cheese4` `"key":`.
 
-**Example 2**
-
 ```json
 {
     "Cheese": {
@@ -233,6 +246,8 @@ You can see that the last defined `"key":` does not have a comma `,`, simply bec
     }
 }
 ```
+
+### Sequential Mania
 
 Realistically you can mix all the examples together and have as many nested `"keys":` as you want.
 
@@ -262,6 +277,8 @@ Realistically you can mix all the examples together and have as many nested `"ke
 
 It starts to look complicated when you have multiple nested `"keys":` put together.
 
+### Strings in Json
+
 Another kind of value you can assign `"keys":` is `"strings"` since `"keys":` are already technically `"strings"`. A `"string"` in programming is simply an `array []` of characters, a `"string"` of characters is just a word or a whole sentance.
 
 ```json
@@ -270,6 +287,8 @@ Another kind of value you can assign `"keys":` is `"strings"` since `"keys":` ar
     "Cheese2": "Should cheese be my only example?"
 }
 ```
+
+### Arrays in Json
 
 You can also assign an array of values to a `"key":`, meaning that a single `"key":` can hold multiple values instead of just one.
 
@@ -302,6 +321,8 @@ You can also assign an array of values to a `"key":`, meaning that a single `"ke
 
 Just like how you need a comma `,` to tell `Json` that there is another value in line, you also do it to the curly brackets `{}` to tell `Json` that there is another pair coming along.
 
+### Booleans in Json
+
 The last piece of information that is needed is `true` and `false` statements, or what we call a `Boolean`. They are simply the word `true` and `false` without quotations.
 
 ```json
@@ -312,6 +333,8 @@ The last piece of information that is needed is `true` and `false` statements, o
     }
 }
 ```
+
+### Json Formatting
 
 All of the examples above are written in a way that is readable. `Json` doesn't need to look like this, as everything can be written onto a single line.
 
