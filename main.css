@@ -3,6 +3,11 @@ body, .markdown-body table, .markdown-body table tr{
     color: rgb(220, 220, 220);
 }
 
+.markdown-body table td {
+    background-color: rgb(30, 30, 30);
+    color: rgb(220, 220, 220);
+}
+
 .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
     border-bottom: 0px solid #000;
 }
