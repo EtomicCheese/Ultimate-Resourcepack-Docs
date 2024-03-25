@@ -39,3 +39,7 @@ a {
 .highlight .mi {
     color: rgb(181, 206, 168);
 }
+
+.highlight pre code {
+    color: rgb(255, 215, 0)
+}
