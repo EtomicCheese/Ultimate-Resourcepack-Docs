@@ -2,7 +2,11 @@
 
 ## Index
 
+<link rel="stylesheet" href="main.css">
 
+<body>
+    <p>Let's see if this will work at all</p>
+</body>
 
 - [Creating a Resourcepack](#creating-a-resourcepack)
   - [Index](#index)
@@ -49,16 +53,6 @@
 In this document, I will detail an extensive list of everything you can possibly do in a resourcepack as of Java 1.20.4. This will obviously not contain *every* possible thing, as most of that knowledge already resides in the [Minecraft Wiki](https://www.minecraft.wiki/).
 
 This document will detail step by step guide to create a resourcepack in detail. It is not aimed towards beginners, however, if you are a beginner, you are welcome to follow along but I will spend a lot of time in the specifics before a single texture file is created.
-
-<div class = "alert alert-block alert-success">
-    <b>Success</b>: Something went right
-</div>
-
-I am supposed to put something here I think
-
-<div class = "alert alert-block alert-warning">
-    <b>Warning</b>: Something is going wrong
-</div>
 
 If reading is not your preference, this document has been created alongside a [youtube video of mine](https://www.youtube.com/EtomicStudios)
 
