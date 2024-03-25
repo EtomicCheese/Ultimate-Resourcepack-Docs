@@ -19,3 +19,7 @@ body, .markdown-body table{
 a {
     color: #6098ff
 }
+
+.markdown-body p strong {
+    color: rgb(255, 255, 255);
+}
