@@ -4,6 +4,8 @@
 
 <link rel="stylesheet" href="main.css">
 
+<body>
+</body>
 - [Creating a Resourcepack](#creating-a-resourcepack)
   - [Index](#index)
   - [Resources](#resources)
