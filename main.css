@@ -16,7 +16,7 @@ body {
 .markdown-body, .markdown-body table {
     box-shadow: 0px 0px 10px #0000007a;
     border-radius: 10px;
-    backdrop-filter: blur(4px) brightness(.7);
+    backdrop-filter: blur(4px);
     border: 1px solid rgba(255 255 255 / 20%);
 }
 
@@ -53,9 +53,10 @@ a {
     border-radius: 10px;
 }
 
-.highlight {
+.highlight pre{
     box-shadow: 0px 0px 10px #0000007a;
     transition: transform .2s;
+    border: 1px solid #464646;
 }
 
 .highlight:hover {
@@ -90,6 +91,7 @@ a {
     box-shadow: 0px 0px 10px #0000007a;
     border-radius: 10px;
     transition: transform .2s;
+    border: 1px solid #494949;
 }
 
 .markdown-body img:hover {
