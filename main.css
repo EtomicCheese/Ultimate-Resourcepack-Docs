@@ -8,16 +8,23 @@ body, .markdown-body table{
 }
 
 body {
-    background-image: url('content/misc/dirt.png');
+    background-image: url('content/misc/deepslate.png');
     background-size: 100px;
     image-rendering: pixelated;
 }
 
-.markdown-body {
+.markdown-body, .markdown-body table {
     box-shadow: 0px 0px 10px #0000007a;
     border-radius: 10px;
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255 255 255 / 20%);
+}
+
+.markdown-body table{
+    background-color: rgba(0 0 0 / 0%);
+    border: 0px;
+    box-shadow: 0px 0px 0px;
+    border-radius: 0px;
 }
 
 .markdown-body table th {
