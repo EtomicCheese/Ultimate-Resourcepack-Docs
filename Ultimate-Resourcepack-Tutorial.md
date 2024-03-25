@@ -4,10 +4,6 @@
 
 <link rel="stylesheet" href="main.css">
 
-<body>
-    <p>Let's see if this will work at all</p>
-</body>
-
 - [Creating a Resourcepack](#creating-a-resourcepack)
   - [Index](#index)
   - [Resources](#resources)
