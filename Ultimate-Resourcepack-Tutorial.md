@@ -427,8 +427,6 @@ As you can see, the game doesn't even display a resourcepack if the `pack.mcmeta
 
 Now that you understand that the game can't function without the file, create a new file and call it `pack.mcmeta`. The `.mcmeta` is the file extension minecraft uses to give the game's assets extra information for not only the metadata of the resourcepack but also metadata for textures so that we can specify whether or not the textures can animate.
 
-If you are unable to see the file name extentions, refer to [here](#unhiding-file-name-extentions)
-
 Once the file is created, edit it with your text editor of choice.
 
 `.mcmeta` files borrow the syntax from the `json` language, but minecraft also directly uses `.json` files for it's 3D models and blockstates.
@@ -462,18 +460,17 @@ By the very least, you need a `pack_format` `object` with a number and a `descri
 
 If your on the correct version, minecraft won't display any errors, but if the resourcepack's version is incorrect, then Minecraft will say `Made for an older version of Minecraft`, or `Made for a newer version of Minecraft`.
 
-**Correct**
+**Correct:**
 
 ![Correct version](content/images/16.png)
 
-**Too Old**
+**Too Old:**
 
 ![too old](content/images/15.png)
 
-**Too new**
+**Too new:**
 
 ![too new](content/images/14.png)
-
 
 ### `supported_formats`
 
@@ -659,7 +656,7 @@ This way of writing does look much better compared to the other examples in term
 
 Like with the unicode escape sequences and the `§`, I will make a list of all values you can use.
 
-```
+```txt
 Colours:
     black
     dark_blue
