@@ -7,6 +7,8 @@
   - [Resources](#resources)
   - [Welcome](#welcome)
   - [Resourcepack](#resourcepack)
+    - [Creating Resourcepack Folder](#creating-resourcepack-folder)
+    - [Folder Name Formatting](#folder-name-formatting)
   - [Minecraft Resources](#minecraft-resources)
   - [Json in Minecraft](#json-in-minecraft)
   - [Json in Minecraft Syntax](#json-in-minecraft-syntax)
@@ -54,11 +56,15 @@ With that being said, let's begin.
 
 ## Resourcepack
 
+### Creating Resourcepack Folder
+
 A resourcepack can either be contained withing a .zip file or a standard folder. As a resourcepack is being created, it can simply be a folder in the `resourcepacks` folder under `.minecraft`. You can also have access this folder by simply pressing `Open Pack Folder` in minecraft from the resourcepack selection screen:
 
 ![alt text](content/images/13.png)
 
 Now create a folder and name it whatever you want.
+
+### Folder Name Formatting
 
 Whatever we call the folder or zip file will translate to the name of the resourcepack in the game itself within the resourcepack selection menu. The name of the resourcepack folder can also contain unicode unicode escape characters or the `§` character that I can't pronounce.
 
@@ -365,9 +371,9 @@ The most used escape sequence would be `\n`, which creates a new line.
 }
 ```
 
-**Output**
+**Output:**
 
-```
+```txt
 Hello,
 World!
 ```
@@ -380,9 +386,9 @@ As you can see, after placing the escape character `\`, followed by the `n`, it 
 }
 ```
 
-**Output**
+**Output:**
 
-```
+```txt
 Hello\World!
 ```
 
