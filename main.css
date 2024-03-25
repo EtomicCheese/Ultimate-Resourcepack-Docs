@@ -47,3 +47,7 @@ a {
 .highlight .kc {
     color: rgb(86, 156, 214);
 }
+
+.highlight .sc {
+    color: rgb(215, 186, 125);
+}
