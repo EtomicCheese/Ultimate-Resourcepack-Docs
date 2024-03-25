@@ -2,18 +2,10 @@ body {
     background-color: rgb(40, 40, 40);
 }
 
-h1 {
-    color: rgb(220, 220, 220);
+.markdown-body {
+    color: rgb(220,220,220);
 }
 
-h2 {
-    color: rgb(220, 220, 220);
-}
-
-h3 {
-    color: rgb(220, 220, 220);
-}
-
-h4 {
-    color: rgb(220, 220, 220);
+.markdown-body h1{
+    color: rgb(255, 140, 140);
 }
