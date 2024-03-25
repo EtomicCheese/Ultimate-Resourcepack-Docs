@@ -8,7 +8,7 @@ body, .markdown-body table{
 }
 
 body {
-    background-image: url('content/misc/deepslate.png');
+    background-image: url('content/misc/black_wool.png');
     background-size: 100px;
     image-rendering: pixelated;
 }
