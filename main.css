@@ -67,12 +67,12 @@ a {
 }
 
 .markdown-body {
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px #0000007a;
     border-radius: 10px;
 }
 
 .markdown-body img {
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px #0000007a;
     border-radius: 10px;
     transition: transform .2s;
 }
