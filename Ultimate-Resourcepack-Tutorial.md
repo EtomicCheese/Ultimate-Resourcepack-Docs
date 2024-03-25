@@ -50,7 +50,15 @@ In this document, I will detail an extensive list of everything you can possibly
 
 This document will detail step by step guide to create a resourcepack in detail. It is not aimed towards beginners, however, if you are a beginner, you are welcome to follow along but I will spend a lot of time in the specifics before a single texture file is created.
 
-This text is <span style="color:red">red</span>.
+<div class = "alert alert-block alert-success">
+    <b>Success</b>: Something went right
+</div>
+
+I am supposed to put something here I think
+
+<div class = "alert alert-block alert-warning">
+    <b>Warning</b>: Something is going wrong
+</div>
 
 If reading is not your preference, this document has been created alongside a [youtube video of mine](https://www.youtube.com/EtomicStudios)
 
