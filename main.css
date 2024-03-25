@@ -23,3 +23,7 @@ a {
 .markdown-body p strong {
     color: rgb(255, 255, 255);
 }
+
+.markdown-body code {
+    background-color: rgb(20, 20, 20);
+}
