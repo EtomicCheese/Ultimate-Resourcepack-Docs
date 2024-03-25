@@ -2,6 +2,8 @@
 
 ## Index
 
+
+
 - [Creating a Resourcepack](#creating-a-resourcepack)
   - [Index](#index)
   - [Resources](#resources)
@@ -47,6 +49,8 @@
 In this document, I will detail an extensive list of everything you can possibly do in a resourcepack as of Java 1.20.4. This will obviously not contain *every* possible thing, as most of that knowledge already resides in the [Minecraft Wiki](https://www.minecraft.wiki/).
 
 This document will detail step by step guide to create a resourcepack in detail. It is not aimed towards beginners, however, if you are a beginner, you are welcome to follow along but I will spend a lot of time in the specifics before a single texture file is created.
+
+This text is <span style="color:red">red</span>.
 
 If reading is not your preference, this document has been created alongside a [youtube video of mine](https://www.youtube.com/EtomicStudios)
 
