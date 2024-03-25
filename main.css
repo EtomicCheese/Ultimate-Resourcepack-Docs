@@ -1,4 +1,4 @@
-body, .markdown-body table{
+body, .markdown-body table, .markdown-body table tr{
     background-color: rgb(40, 40, 40);
     color: rgb(220, 220, 220);
 }
