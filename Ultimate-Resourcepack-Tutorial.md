@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="main.css">
-
 # Creating a Resourcepack
 
 ## Index
