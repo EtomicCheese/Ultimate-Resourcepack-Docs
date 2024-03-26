@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="main.css">
-<link rel="icon" type="image/x-icon" href="content/misc/icon.png">
 
 # Creating a Resourcepack
 
