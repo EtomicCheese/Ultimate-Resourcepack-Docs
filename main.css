@@ -8,6 +8,7 @@ body{
     background-image: url('content/misc/black_wool.png');
     background-size: 100px;
     image-rendering: pixelated;
+    scrollbar-color: rgba(50 ,50 ,50 , 1) transparent;
 }
 
 .markdown-body {
