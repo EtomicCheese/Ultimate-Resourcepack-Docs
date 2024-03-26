@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="main.css">
-
 # Hello
 
 Welcome to the github repository of this website.
