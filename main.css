@@ -23,8 +23,8 @@ body{
 }
 
 .markdown-body table{
-    background-color: rgba(0 0 0 / 0%);
-    border: 2px solid rgba(255, 255, 255, .1);
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0 ,0 ,0 , 0);
     box-shadow: 0px 0px 0px;
     border-radius: 10px;
     padding: 10px;
@@ -33,9 +33,17 @@ body{
     margin: 10px auto;
 }
 
-td, th {
+td, th, tr, th, tbody {
     text-align: center;
     border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0 ,0 ,0 , 0);
+}
+
+.markdown-body table td {
+    background-color: rgb(20, 20, 20);
+    color: rgb(220 220 220);
+    border: 1px solid rgba(255, 255, 255, .3);
 }
 
 table {
@@ -49,11 +57,6 @@ table {
 
 .markdown-body table th {
     background-color: rgb(0, 0, 0);
-}
-
-.markdown-body table td {
-    background-color: rgb(20, 20, 20);
-    color: rgb(220 220 220);
 }
 
 .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
