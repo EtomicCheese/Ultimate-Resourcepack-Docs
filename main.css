@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body, .markdown-body table{
+body{
     background-color: rgb(40, 40, 40);
     color: rgb(220, 220, 220);
 }
@@ -25,6 +25,14 @@ body {
     border: 0px;
     box-shadow: 0px 0px 0px;
     border-radius: 0px;
+    padding: 10px;
+    transition: transform .05s;
+    display: table;
+    margin: 10px auto;
+}
+
+.markdown-body table:hover {
+    transform: scale(1.01);
 }
 
 .markdown-body table th {
@@ -33,11 +41,15 @@ body {
 
 .markdown-body table td {
     background-color: rgb(20, 20, 20);
-    color: rgb(220, 220, 220);
+    color: rgb(220 220 220);
 }
 
 .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
     border-bottom: 0px solid #000;
+    border-bottom: 1px solid rgba(220, 220, 220, .5);
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 40px
 }
 
 a {
@@ -60,7 +72,7 @@ a {
 
 .highlight pre{
     box-shadow: 0px 0px 10px #0000007a;
-    transition: transform .2s;
+    transition: transform .05s;
     border: 1px solid #464646;
 }
 
@@ -95,7 +107,7 @@ a {
 .markdown-body img {
     box-shadow: 0px 0px 10px #0000007a;
     border-radius: 10px;
-    transition: transform .2s;
+    transition: transform .05s;
     border: 1px solid #494949;
 }
 
@@ -105,4 +117,5 @@ a {
 
 .markdown-body p {
     text-shadow:0px 0px 15px black;
+    margin-top: 20px;
 }
