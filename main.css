@@ -114,12 +114,16 @@ a {
 
 .highlight pre{
     box-shadow: 0px 0px 10px #0000007a;
-    transition: transform .05s;
+    transition: all .5s;
     border: 1px solid #464646;
 }
 
-.highlight:hover {
-    transform: scale(1.005);
+.markdown-body pre {
+    transition: all .5s;
+}
+
+.markdown-body pre:hover {
+    transform: scale(1.01);
 }
 
 .highlight .nl {
@@ -149,7 +153,7 @@ a {
 .markdown-body img {
     box-shadow: 0px 0px 10px #0000007a;
     border-radius: 10px;
-    transition: transform .05s;
+    transition: transform .5s;
     border: 1px solid #494949;
 }
 
