@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="main.css">
+<link rel="icon" type="image/x-icon" href="content/misc/icon.png">
 
 # Creating a Resourcepack
 
@@ -828,3 +829,4 @@ The `name` of the language can honestly be whatever you want if you were making 
 Declaring the `en_us` language in `pack.mcmeta` is not needed since it's already in the game. The real use of the `language` `object` is for loading custom language files which can be found in `(resourcepack name)/assets/minecraft/lang/`.
 
 When we put `en_us` inside `pack.mcmeta`, it is looking for the language `en_us.json` in the `lang` folder. Later when we start adding custom languages, you can add it to the `pack.mcmeta` file when it's in `lang`.
+
