@@ -5,12 +5,14 @@ html {
 body{
     background-color: rgb(40, 40, 40);
     color: rgb(220, 220, 220);
-}
-
-body {
     background-image: url('content/misc/black_wool.png');
     background-size: 100px;
     image-rendering: pixelated;
+}
+
+.markdown-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .markdown-body, .markdown-body table {
@@ -46,10 +48,12 @@ body {
 
 .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
     border-bottom: 0px solid #000;
-    border-bottom: 1px solid rgba(220, 220, 220, .5);
+    /*border-bottom: 1px solid rgba(220, 220, 220, .5);*/
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
     text-align: center;
-    margin-bottom: 5px;
-    line-height: 40px
+    margin: 20px;
+    padding-bottom: 5px;
 }
 
 a {
