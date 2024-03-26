@@ -47,12 +47,11 @@ td, th, tr, th, tbody {
 }
 
 td, th, tr{
-    transition: transform .05s;
-    transition: filter .05s;
+    transition: all .05s;
 }
 
 tr:hover {
-    filter: brightness(1.5);'
+    filter: brightness(1.5);
 }
 
 .markdown-body table td {
