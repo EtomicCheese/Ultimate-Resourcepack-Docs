@@ -46,10 +46,25 @@ td, th, tr, th, tbody {
     background-color: rgba(0 ,0 ,0 , 0);
 }
 
+td, th, tr{
+    transition: transform .05s;
+    transition: filter .05s;
+}
+
+tr:hover {
+    filter: brightness(1.5);'
+}
+
 .markdown-body table td {
     background-color: transparent;
     color: rgb(220 220 220);
     border: 1px solid rgb(255 255 255 / 30%);
+}
+
+.markdown-body table td:hover, th:hover{
+    transform: scale(1.03);
+    /*filter: brightness(1.5);*/
+    background-color: rgb(50, 50, 50);
 }
 
 .markdown-body table tr {
@@ -68,10 +83,6 @@ td, th, tr, th, tbody {
 table {
     border-spacing: 5px;
     border-collapse:unset;
-}
-
-.markdown-body table:hover {
-    transform: scale(1.01);
 }
 
 .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
