@@ -27,6 +27,7 @@
     - [`supported_formats`](#supported_formats)
     - [`description`](#description)
     - [`Language (pack.mcmeta)`](#language-packmcmeta)
+    - [`filter (pack.mcmeta)`](#filter-packmcmeta)
 
 ## Resources
 
@@ -44,15 +45,9 @@
 
 ## Welcome
 
-In this document, I will detail an extensive list of everything you can possibly do in a resourcepack as of Java 1.20.4. This will obviously not contain *every* possible thing, as most of that knowledge already resides in the [Minecraft Wiki](https://www.minecraft.wiki/).
+Welcome to the Ultimate Resourcepack documentation! Everything from changing basic textures to PBR in shaderpacks and advanced animations will be presented here.
 
-This document will detail step by step guide to create a resourcepack in detail. It is not aimed towards beginners, however, if you are a beginner, you are welcome to follow along but I will spend a lot of time in the specifics before a single texture file is created.
-
-If reading is not your preference, this document has been created alongside a [youtube video of mine](https://www.youtube.com/EtomicStudios)
-
-If you would like to the sources of the information that I present, you can go to the [resources](#resources) in the index.
-
-With that being said, let's begin.
+This was created by Etomic on [Youtube](https://www.youtube.com/etomicstudios).
 
 ## Resourcepack
 
@@ -826,3 +821,167 @@ The `name` of the language can honestly be whatever you want if you were making 
 Declaring the `en_us` language in `pack.mcmeta` is not needed since it's already in the game. The real use of the `language` `object` is for loading custom language files which can be found in `(resourcepack name)/assets/minecraft/lang/`.
 
 When we put `en_us` inside `pack.mcmeta`, it is looking for the language `en_us.json` in the `lang` folder. Later when we start adding custom languages, you can add it to the `pack.mcmeta` file when it's in `lang`.
+
+### `filter (pack.mcmeta)`
+
+As of Minecraft 1.19, you can filter content in both resourcepacks and datapacks. This simply means that if you wanted to prevent certain resources from loading, you can specify them inside `pack.mcmeta` within an `array []`.
+
+For an example, if you wanted to remove a crafting recipe from the game in a datapack, you may specify it in the `filter` `key`. For resourcepacks, you can prevent certain textures from loading or even certain .mcmeta files or block models from loading either from your resourcepack or from the content in minecraft's resources.
+
+Here is an example:
+
+```json
+{
+    "filter": {
+
+    }
+}
+```
+
+This is an empty filter `key`. Since the `key` opens up to an `object {}`, you can only input a single entry.
+
+With this, let's prevent minecraft's default stone texture to load by listing it within and `object {}`.
+
+```json
+{
+    "filter": {
+        "block": [
+            {
+                "path": "block/stone.png"
+            }
+        ]
+    }
+}
+```
+
+Here Minecraft's default stone texture has been specified. Now when the resourcepack has reloaded, it will prevent `stone.png` from loading across all loaded resourcepacks and Minecraft's loaded resources.
+
+![28](content/images/28.png)
+
+This will apply to any model that requires the texture.
+
+![29](content/images/29.png)
+
+This can also work for item textures by specifying `item/` instead of `block/`.
+
+```json
+"filter": {
+        "block": [
+            {
+                "path": "item/diamond_sword.png"
+            }
+        ]
+    }
+```
+
+![34](content/images/34.png)
+
+Since we specified textures, now what happens when we specify the block models?
+
+Models in minecraft end in the `.json` file format which will be covered at a later point.
+
+```json
+{
+    "filter": {
+        "block": [
+            {
+                "path": "block/stone.json"
+            }
+        ]
+    }
+}
+```
+
+![30](content/images/30.png)
+
+![31](content/images/31.png)
+
+Here you can see that we prevented the block model for stone to load, not the texture since we specified `stone.json` rather than `stone.png`.
+
+We can prevent both the texture and model from loading entirely by placing an `asterisk *`.
+
+```json
+{
+    "filter": {
+        "block": [
+            {
+                "path": "block/stone.*"
+            }
+        ]
+    }
+}
+```
+
+![32](content/images/32.png)
+
+With the `asterisk *` being placed after the `period .`, we are telling the game to filter every file format that has the name `stone` before it.
+
+If you try to place an `asterisk *` in the filter without being careful, you could accidentally prevent every minecraft resource for models textures and animations from being loaded, which results in Minecraft disabling your resourcepack.
+
+```json
+{
+    "filter": {
+        "block": [
+            {
+                "path": "block/*"
+            }
+        ]
+    }
+}
+```
+
+![33](content/images/33.png)
+
+So be careful.
+
+Since you can block any resource in a resourcepack, I thought it would be fun to show that you can block animation files from loading.
+
+```json
+{
+    "filter": {
+        "block": [
+            {
+                "path": "block/fire_0.png.mcmeta"
+            }
+        ]
+    }
+}
+```
+
+You can see that the `.mcmeta` file tells minecraft that `fire_0.png` is the animation file, and here we are preventing it from loading.
+
+This is without the filter:
+
+![5](content/gifs/5.gif)
+
+And this is with the filter:
+
+![6](content/gifs/6.gif)
+
+Here you can see the entire animation strip being squished into the dimensions of the UV Map of fire.
+
+Of course you can specify multiple items to prevent from being loaded.
+
+```json
+{
+    "filter": {
+        "block": [
+            {
+                "path": "block/fire_0.png.mcmeta"
+            },
+            {
+                "path": "block/stone.png"
+            },
+            {
+                "path": "item/diamond_sword.png"
+            }
+        ]
+    }
+}
+```
+
+Another element you can add to the `block` `key` inside the `filter` `key` is the `namespace` `key`.
+
+As you know, in order to prevent a resource from loading, you need to specify the `path` `key`. You can also specify the `namespace` of which resource to block specifically.
+
+By default, if there is only the `path` key inside the `block` `array []`, everything specified by the `path` `key` will be blocked. This means that it would prevent `stone.png` from loading across every resourcepack loaded. If you only wanted to `block` a specific texture in a specific namespace, you can specify it here.
