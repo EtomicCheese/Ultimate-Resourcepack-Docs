@@ -39,7 +39,7 @@ body{
     margin: 10px auto;
 }
 
-td, th, tr, th, tbody {
+td, th, tr, tbody {
     text-align: center;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0);
