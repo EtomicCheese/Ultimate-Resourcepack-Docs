@@ -55,7 +55,7 @@ This was created by Etomic on [Youtube](https://www.youtube.com/etomicstudios).
 
 A resourcepack can either be contained within a .zip file or a standard folder. As a resourcepack is being created, it can simply be a folder in the `resourcepacks` folder under `.minecraft`. You can also have access this folder by simply pressing `Open Pack Folder` in minecraft from the resourcepack selection screen:
 
-![alt text](content/images/13.png)
+![alt text](../content/images/13.png)
 
 Now create a folder and name it whatever you want.
 
@@ -67,41 +67,41 @@ Currently I have called the resourcepack folder to just be `"Cheese"`. As such t
 
 **Windows:**
 
-![Cheese in Windows](content/images/1.png)
+![Cheese in Windows](../content/images/1.png)
 
 **Minecraft:**
 
-![Cheese in Minecraft](content/images/2.png)
+![Cheese in Minecraft](../content/images/2.png)
 
 Including the `§` in the folder name, you can define what colours and styles the title of the resourcepack has.
 
 **Windows:**
 
-![§3Cheese in Windows](content/images/3.png)
+![§3Cheese in Windows](../content/images/3.png)
 
 **Minecraft:**
 
-![§3Cheese in Minecraft](content/images/4.png)
+![§3Cheese in Minecraft](../content/images/4.png)
 
 Alternatively you can add multiple `§`. You can even combine them:
 
 **Windows:**
 
-![\u00a73Cheese in Windows](content/images/5.png)
+![\u00a73Cheese in Windows](../content/images/5.png)
 
 **Minecraft:**
 
-![\u00a73Cheese in Minecraft](content/images/6.png)
+![\u00a73Cheese in Minecraft](../content/images/6.png)
 
 The `§r` allows you to completely reset the colours and styles that come after it's declaration, which allows you to redefine what you want without inheriting the styles previously used for what you don't want.
 
 **Windows:**
 
-![\u00a73Cheese in Windows](content/images/7.png)
+![\u00a73Cheese in Windows](../content/images/7.png)
 
 **Minecraft:**
 
-![\u00a73Cheese in Minecraft](content/images/8.png)
+![\u00a73Cheese in Minecraft](../content/images/8.png)
 
 You can see that the last to characters in "Cheese", "`se`" has been reset to the default values. Though you can see that the folder name in windows has become unreadable, but it looks good in minecraft.
 
@@ -145,23 +145,23 @@ All the models and textures and literally every visual asset that Minecraft uses
 
 To do this, if your using Minecraft's default launcher, you can simply launch the game, then go to the resourcepack selection menu. Then simply press `Open Pack Folder`.
 
-![13](content/images/13.png)
+![13](../content/images/13.png)
 
 Once you are in the folder, you can go backwards and into the `.minecraft` folder. There you can see many important folders like `resourcepacks`, which was the folder you were just in, and `saves`, which is where all of your minecraft worlds are stored. Now you should know already how to get here regardless, but this time we are going into the `versions` folder that is inside `.minecraft`.
 
-![25](content/images/25.png)
+![25](../content/images/25.png)
 
 If you have played multiple versions of Minecraft, you should see many folders containing the names of the versions of Minecraft. If you are making a resourcepack for Minecraft 1.20.4, you can go to the folder `1.20.4`, and open it up, given that you have played on that version before.
 
-![26](content/images/26.png)
+![26](../content/images/26.png)
 
 Inside you should see two files. `1.20.4.jar` and `1.20.4.json`. Our attention is focused on `1.20.4.jar`, as it contains all of the information we need.
 
-![27](content/images/27.png)
+![27](../content/images/27.png)
 
 If you are unable to see the file extensions on Windows, simply click the drop down button in your Windows Explorer, go to `View`, press `Options`, go to `View`, then scroll down and disable `Hide extensions for known file types`, then click apply.
 
-![3](content/gifs/3.gif) {#unhiding-file-name-extentions}
+![3](../content/gifs/3.gif){#unhiding-file-name-extentions}
 
 Now that we can see the file name extensions, we know which one of the files is the .jar. Of course if you have Java installed you would see the file type through the icon in my case, but you can never be too sure.
 
@@ -169,7 +169,7 @@ The next step is to extract the jar file as if we were extracting any other comp
 
 Once you have 7-Zip, you can go to the `.jar`, right click, go to the 7-Zip section, then press `extract files`.
 
-![4](content/gifs/4.gif)
+![4](../content/gifs/4.gif)
 
 Now that we have the `.jar` file extracted, we can open it up and go to the `assets` folder.
 
@@ -404,15 +404,15 @@ A `pack.mcmeta` file inside the `Cheese` folder is what allows minecraft to reco
 
 This is how the game functions with a pre-configured `pack.mcmeta` file inside the folder:
 
-![vscode with pack.mcmeta](content/images/9.png)
+![vscode with pack.mcmeta](../content/images/9.png)
 
-![minecraft with pack.mcmeta](content/images/10.png)
+![minecraft with pack.mcmeta](../content/images/10.png)
 
 And this is the resourcepack folder without a valid `pack.mcmeta` file:
 
-![vscode without pack.mcmeta](content/images/11.png)
+![vscode without pack.mcmeta](../content/images/11.png)
 
-![minecraft without pack.mcmeta](content/images/12.png)
+![minecraft without pack.mcmeta](../content/images/12.png)
 
 Note that the `Resourcepacks` folder displayed in the smaller images isn't the resourcepack, it's simply the folder that you put your resourcepacks inside from the `.minecraft` directory.
 
@@ -435,7 +435,7 @@ This is the minimum requirements `pack.mcmeta` needs in order for Minecraft to r
 }
 ```
 
-![17](content/images/17.png)
+![17](../content/images/17.png)
 
 By the very least, you need a `pack_format` `object` with a number and a `description` `object` with a `string`. And often times this is all you really need. But now I will show you what all of this means.
 
@@ -455,15 +455,15 @@ If your on the correct version, minecraft won't display any errors, but if the r
 
 **Correct:**
 
-![Correct version](content/images/16.png)
+![Correct version](../content/images/16.png)
 
 **Too Old:**
 
-![too old](content/images/15.png)
+![too old](../content/images/15.png)
 
 **Too new:**
 
-![too new](content/images/14.png)
+![too new](../content/images/14.png)
 
 ### `supported_formats`
 
@@ -508,7 +508,7 @@ There are three ways you can use to create a description. The first way is to si
 }
 ```
 
-![17](content/images/17.png)
+![17](../content/images/17.png)
 
 The resourcepack selection menu allows each resourcepack description to have 2 lines, not just a single line. To write on the second line of the description, you can simple add `\n` in the text.
 
@@ -520,7 +520,7 @@ The resourcepack selection menu allows each resourcepack description to have 2 l
 }
 ```
 
-![18](content/images/18.png)
+![18](../content/images/18.png)
 
 Above you can see `\n` is inserted in-between `"Hello,"` and `"World!"`. This will cause `"Hello,"` to be on the first line, and `"World!"` to be on the second.
 
@@ -536,7 +536,7 @@ You can either use the `§` character. The `§` is one of the more simple ways o
 }
 ```
 
-![19](content/images/19.png)
+![19](../content/images/19.png)
 
 This sets the text colour to `dark_aqua`. You can override the colour after you have declared a `§` by simply adding another `§` soon after your last `§`. Here is an example:
 
@@ -548,7 +548,7 @@ This sets the text colour to `dark_aqua`. You can override the colour after you 
 }
 ```
 
-![20](content/images/20.png)
+![20](../content/images/20.png)
 
 As you can see this can change the colours quite well. Here is a table of all things you can do with `§` and unicodes:
 
@@ -590,7 +590,7 @@ The second way is to use unicode escape characters instead of using a `§`. A un
 }
 ```
 
-![20](content/images/20.png)
+![20](../content/images/20.png)
 
 As complicated as it may look, it's simply a longer version of a `§`. Previously we used a `\n` to create a new line in the json string `"Hello, World!"`. The the backslash `\` is called an escape character. This is a way to tell the game that the following text is code rather than simple text. In this case `\u00` is used for the character. You could technically type the whole alphabet with the unicode characters but I think it's better to just type in plain english, or else we might have to look at something as horrifying as this.
 
@@ -602,7 +602,7 @@ As complicated as it may look, it's simply a longer version of a `§`. Previousl
 }
 ```
 
-![20](content/images/20.png)
+![20](../content/images/20.png)
 
 I'm not too sure why any sane person will do this but if you really really **REALLY** want to, you can.
 
@@ -621,7 +621,7 @@ It is possible to create an array of `strings`. By simply using square brackets 
 }
 ```
 
-![17](content/images/17.png)
+![17](../content/images/17.png)
 
 Each new `string` does not create a new line in the resourceopack because there is no `\n` to tell the program when to create a new line. All this is is doing is putting each `string` one after the other.
 
@@ -643,7 +643,7 @@ Now as previously mentioned, you are able to create `strings` that allows you to
 }
 ```
 
-![21](content/images/21.png)
+![21](../content/images/21.png)
 
 This way of writing does look much better compared to the other examples in terms of readability. As you might notice, the `true` and `false` statements do not use quotations.
 
@@ -694,7 +694,7 @@ In more recent versions of Minecraft, you are no longer restricted to using the 
 }
 ```
 
-![24](content/images/24.png)
+![24](../content/images/24.png)
 
 In this case, I put in the hex code `#ff0000`, which is just really really red.
 
@@ -719,7 +719,7 @@ If you want to create more strings without having to retype all of the style and
 }
 ```
 
-![22](content/images/22.png)
+![22](../content/images/22.png)
 
 With the `extra` tag in use, you can add additional lines while keeping the previous values while still being able to add more specific values. You can even create nested `extra` tags by putting `extra` in every `extra`. `extra` fun!
 
@@ -748,7 +748,7 @@ With the `extra` tag in use, you can add additional lines while keeping the prev
 }
 ```
 
-![23](content/images/23.png)
+![23](../content/images/23.png)
 
 Alternatively instead of created nested `extra` tags, you can simply make the `description` tag an array.
 
@@ -786,7 +786,7 @@ Alternatively instead of created nested `extra` tags, you can simply make the `d
 }
 ```
 
-![1](content/gifs/1.gif)
+![1](../content/gifs/1.gif)
 
 Like the `extra` tag, every value here inherits the first declared `object`. In this example, that would be the `#` that is `gold` and has `obfuscated` set to `true`. As a result every `object` after it will also have `obfuscated` set to `true` by default. Of course you can set `obfuscated` to `false` if need be. This goes for colours as well.
 
@@ -856,11 +856,11 @@ With this, let's prevent minecraft's default stone texture to load by listing it
 
 Here Minecraft's default stone texture has been specified. Now when the resourcepack has reloaded, it will prevent `stone.png` from loading across all loaded resourcepacks and Minecraft's loaded resources.
 
-![28](content/images/28.png)
+![28](../content/images/28.png)
 
 This will apply to any model that requires the texture.
 
-![29](content/images/29.png)
+![29](../content/images/29.png)
 
 This can also work for item textures by specifying `item/` instead of `block/`.
 
@@ -874,7 +874,7 @@ This can also work for item textures by specifying `item/` instead of `block/`.
     }
 ```
 
-![34](content/images/34.png)
+![34](../content/images/34.png)
 
 Since we specified textures, now what happens when we specify the block models?
 
@@ -892,9 +892,9 @@ Models in minecraft end in the `.json` file format which will be covered at a la
 }
 ```
 
-![30](content/images/30.png)
+![30](../content/images/30.png)
 
-![31](content/images/31.png)
+![31](../content/images/31.png)
 
 Here you can see that we prevented the block model for stone to load, not the texture since we specified `stone.json` rather than `stone.png`.
 
@@ -912,7 +912,7 @@ We can prevent both the texture and model from loading entirely by placing an `a
 }
 ```
 
-![32](content/images/32.png)
+![32](../content/images/32.png)
 
 With the `asterisk *` being placed after the `period .`, we are telling the game to filter every file format that has the name `stone` before it.
 
@@ -930,7 +930,7 @@ If you try to place an `asterisk *` in the filter without being careful, you cou
 }
 ```
 
-![33](content/images/33.png)
+![33](../content/images/33.png)
 
 So be careful.
 
@@ -952,11 +952,11 @@ You can see that the `.mcmeta` file tells minecraft that `fire_0.png` is the ani
 
 This is without the filter:
 
-![5](content/gifs/5.gif)
+![5](../content/gifs/5.gif)
 
 And this is with the filter:
 
-![6](content/gifs/6.gif)
+![6](../content/gifs/6.gif)
 
 Here you can see the entire animation strip being squished into the dimensions of the UV Map of fire.
 
@@ -985,4 +985,3 @@ Another element you can add to the `block` `key` inside the `filter` `key` is th
 As you know, in order to prevent a resource from loading, you need to specify the `path` `key`. You can also specify the `namespace` of which resource to block specifically.
 
 By default, if there is only the `path` key inside the `block` `array []`, everything specified by the `path` `key` will be blocked. This means that it would prevent `stone.png` from loading across every resourcepack loaded. If you only wanted to `block` a specific texture in a specific namespace, you can specify it here.
-
