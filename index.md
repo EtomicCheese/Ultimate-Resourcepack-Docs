@@ -9,5 +9,7 @@ On this page you will be able to navigate through the index of the entire page.
 Here we are testing multiple pages, this site is under constant improvement of course.
 
 [Page 1](doc/page1.md)
+
 [Page 2](doc/page2.md)
+
 [Page 3](doc/page3.md)
