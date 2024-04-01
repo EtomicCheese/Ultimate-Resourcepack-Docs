@@ -53,7 +53,7 @@ This was created by Etomic on [Youtube](https://www.youtube.com/etomicstudios).
 
 ### Creating Resourcepack Folder
 
-A resourcepack can either be contained withing a .zip file or a standard folder. As a resourcepack is being created, it can simply be a folder in the `resourcepacks` folder under `.minecraft`. You can also have access this folder by simply pressing `Open Pack Folder` in minecraft from the resourcepack selection screen:
+A resourcepack can either be contained within a .zip file or a standard folder. As a resourcepack is being created, it can simply be a folder in the `resourcepacks` folder under `.minecraft`. You can also have access this folder by simply pressing `Open Pack Folder` in minecraft from the resourcepack selection screen:
 
 ![alt text](content/images/13.png)
 
@@ -103,7 +103,7 @@ The `§r` allows you to completely reset the colours and styles that come after 
 
 ![\u00a73Cheese in Minecraft](content/images/8.png)
 
-You can see that the last to characters in "Cheese", "`se`" has been reset to the default values. Though you can see that the foldername in windows has become unreadable, but it looks good in minecraft.
+You can see that the last to characters in "Cheese", "`se`" has been reset to the default values. Though you can see that the folder name in windows has become unreadable, but it looks good in minecraft.
 
 Here is a table containing all `§` codes and unicode escape characters:
 
@@ -985,3 +985,4 @@ Another element you can add to the `block` `key` inside the `filter` `key` is th
 As you know, in order to prevent a resource from loading, you need to specify the `path` `key`. You can also specify the `namespace` of which resource to block specifically.
 
 By default, if there is only the `path` key inside the `block` `array []`, everything specified by the `path` `key` will be blocked. This means that it would prevent `stone.png` from loading across every resourcepack loaded. If you only wanted to `block` a specific texture in a specific namespace, you can specify it here.
+
