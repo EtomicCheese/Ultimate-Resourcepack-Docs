@@ -146,6 +146,11 @@ a {
     color: rgb(215, 186, 125);
 }
 
+.highlight .err {
+    color: rgb(255,255,255);
+    background-color: rgba(0,0,0,0);
+}
+
 .markdown-body img {
     box-shadow: 0px 0px 10px #0000007a;
     border-radius: 10px;
