@@ -16,6 +16,10 @@ body{
     scrollbar-color: rgba(50 ,50 ,50 , 1) transparent;
 }
 
+.markdown-body hr {
+    background: #454545;
+}
+
 .markdown-body {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -173,8 +177,4 @@ a {
     border-left: 5px solid rgba(255, 255, 255, .5);
     padding-top: 3px;
     padding-bottom: 5px;
-}
-
-hr, .rule {
-    background: #464646;
 }
