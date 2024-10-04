@@ -107,24 +107,24 @@ You can see that the last to characters in "Cheese", "`se`" has been reset to th
 
 Here is a table containing all `§` codes and unicode escape characters:
 
-|`§` Code|Unicode|Colour|
-|---|---|---|
-|§0|\u00a70|black|
-|§1|\u00a71|dark_blue|
-|§2|\u00a72|dark_green|
-|§3|\u00a73|dark_aqua|
-|§4|\u00a74|dark_red|
-|§5|\u00a75|dark_purple|
-|§6|\u00a76|gold|
-|§7|\u00a77|gray|
-|§8|\u00a78|dark_gray|
-|§9|\u00a79|blue|
-|§a|\u00a7a|green|
-|§b|\u00a7b|aqua|
-|§c|\u00a7c|red|
-|§d|\u00a7d|light_purple|
-|§e|\u00a7e|yellow|
-|§f|\u00a7f|white|
+| `§` Code | Unicode | Colour       |
+| -------- | ------- | ------------ |
+| §0       | \u00a70 | black        |
+| §1       | \u00a71 | dark_blue    |
+| §2       | \u00a72 | dark_green   |
+| §3       | \u00a73 | dark_aqua    |
+| §4       | \u00a74 | dark_red     |
+| §5       | \u00a75 | dark_purple  |
+| §6       | \u00a76 | gold         |
+| §7       | \u00a77 | gray         |
+| §8       | \u00a78 | dark_gray    |
+| §9       | \u00a79 | blue         |
+| §a       | \u00a7a | green        |
+| §b       | \u00a7b | aqua         |
+| §c       | \u00a7c | red          |
+| §d       | \u00a7d | light_purple |
+| §e       | \u00a7e | yellow       |
+| §f       | \u00a7f | white        |
 
 |`§` Code|Unicode|Style|
 |---|---|---|
